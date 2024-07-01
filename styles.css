@@ -7,7 +7,8 @@
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns:minmax(300px,1fr) 4fr;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 140px 1fr;
 }
 .dashboard{
     display: grid;
@@ -45,4 +46,92 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.header{
+    display: grid;
+    grid-template-rows: 60px 80px;
+    padding: 0 40px;
+}
+.search-part{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: center;
+    column-gap:50px;
+}
+.header svg{
+    height:25px;
+    width: auto;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.nav input{
+    padding: 7px;
+    width: 90%;
+    background-color: rgb(228, 227, 227);
+    border:none;
+    border-radius: 15px;
+}
+.info-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 550;
+    font-size: small;
+    padding-right: 10px;
+}
+.info-part div{
+    text-wrap: nowrap;
+}
+.info-part img{
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.user-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: center;
+}
+.intro img{
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+.intro .hello{
+    font-size:xx-small;
+}
+.intro .name{
+    font-size:medium;
+    text-wrap: nowrap;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    justify-self: end;
+    padding-right: 10px;
+}
+.buttons button{
+    background-color: rgb(2, 154, 255);
+    color: white;
+    border-radius: 18px;
+    padding: 10px 20px;
+    border:none;
+    font-weight: bold;
+}
+.main{
+    background-color: rgb(228, 227, 227);
 }
